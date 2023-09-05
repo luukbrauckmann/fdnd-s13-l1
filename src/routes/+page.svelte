@@ -1,11 +1,10 @@
 <script>
-  // @ts-nocheck
-  export let data
+  // export let data
 
-  const { page } = data
+  // const { page } = data
 </script>
 
-<img class="light" src="light.svg" alt>
+<img class="light" src="light.svg" alt="">
 
 <div class="content">
 	<article class="portret">
