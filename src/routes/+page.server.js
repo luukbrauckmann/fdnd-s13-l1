@@ -5,7 +5,7 @@ export async function load() {
 	const hygraph = new GraphQLClient(CONTENT_API, { headers: {} })
 	const query = gql`
 	query Pages {
-		page(where: {slug: "start"}, locales: en) {
+		page(where: {slug: "start"}, locales: nl) {
 			content
 			title
 		}
