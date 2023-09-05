@@ -26,6 +26,7 @@
 	"dependencies": {
 		"@prismicio/client": "^7.2.0",
 		"@prismicio/svelte": "^0.1.2",
+		"gsap": "^3.12.2",
 		"node-fetch": "^3.3.2"
 	}
 }
