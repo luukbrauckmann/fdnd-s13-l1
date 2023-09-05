@@ -36,6 +36,7 @@ img.light {
 	aspect-ratio: 1/1.41;
 	height: 35vh;
 	border: 15px solid black;
+	transition: all .2s;
 }
 
 .content article img {
@@ -44,7 +45,17 @@ img.light {
 	object-fit: cover;
 }
 
+.content article.portret:hover {
+	transform: scale(2) translateX(5vw);
+	left: 50%;
+}
+
 .content article.newspaper {
 	padding: .5em;
 	font-size: .75rem;
+}
+
+.content article.newspaper:hover {
+	transform: scale(2) translateX(-5vw);
+	left: 50%;
 }
