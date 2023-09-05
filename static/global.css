@@ -11,3 +11,11 @@ body {
 
 	margin: 0;
 }
+
+img.light {
+	height: 20vh;
+	position: fixed;
+	left: 50%;
+	top: 0%;
+	transform: translate(-20%, 0%);
+}
