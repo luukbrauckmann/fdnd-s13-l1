@@ -8,11 +8,6 @@ body {
 	width: 100vw;
 
 	overflow: hidden;
-}
 
-body::after {
-	position: fixed;
-	inset: 0 50%;
-	height: 3rem;
-	background: beige;
+	margin: 0;
 }
