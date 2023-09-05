@@ -32,8 +32,19 @@ img.light {
 }
 
 .content article {
-	background-color: blue;
+	background-color: #EEE8DA;
 	aspect-ratio: 1/1.41;
 	height: 35vh;
 	border: 15px solid black;
+}
+
+.content article img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+
+.content article.newspaper {
+	padding: .5em;
+	font-size: .75rem;
 }

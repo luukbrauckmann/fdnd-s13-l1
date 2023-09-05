@@ -8,17 +8,16 @@
 <img class="light" src="light.svg" alt>
 
 <div class="content">
-	<article>
-		<header>
-			<h2>Foto</h2>
-		</header>
+	<article class="portret">
+		<img src="me_myself_I.jpeg" alt="">
 
 	</article>
 
-	<article>
+	<article class="newspaper">
 		<header>
-			<h2>Text</h2>
+			<h2>Hier komt wat over mezelf</h2>
 		</header>
+
 
 	</article>
 </div>
