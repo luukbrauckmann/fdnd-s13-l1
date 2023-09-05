@@ -1,9 +1,9 @@
 <script>
-  /** @type {import('./$types').PageData} */
+  // @ts-nocheck
+
   export let data
 
   const { page } = data
 </script>
 
-<h1>{page.title}</h1>
-<p>{page.content}</p>
+<h1>{ page.title }</h1>

@@ -1,15 +1,11 @@
-import { CONTENT_API } from "$env/static/private"
-import { GraphQLClient, gql } from "graphql-request"
+import { createClient } from '$lib/prismicio';
 
+export const prerender = true;
+
+/** @type {import('./$types').PageServerLoad} */
 export async function load() {
-	const hygraph = new GraphQLClient(CONTENT_API, { headers: {} })
-	const query = gql`
-	query Pages {
-		page(where: {slug: "start"}, locales: nl) {
-			content
-			title
-		}
-	}
-	`
-	return await hygraph.request(query)
+	const client = createClient();
+	const response = await client.getByUID('page', 'main');
+
+	return { page: response.data }
 }
