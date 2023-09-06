@@ -22,17 +22,6 @@ interface PageDocumentData {
   title: prismic.KeyTextField;
 
   /**
-   * Content field in *Page*
-   *
-   * - **Field Type**: Rich Text
-   * - **Placeholder**: *None*
-   * - **API ID Path**: page.content
-   * - **Tab**: Main
-   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
-   */
-  content: prismic.RichTextField;
-
-  /**
    * Slice Zone field in *Page*
    *
    * - **Field Type**: Slice Zone
@@ -80,7 +69,7 @@ interface PageDocumentData {
  * Page document from Prismic
  *
  * - **API ID**: `page`
- * - **Repeatable**: `true`
+ * - **Repeatable**: `false`
  * - **Documentation**: https://prismic.io/docs/custom-types
  *
  * @typeParam Lang - Language API ID of the document.

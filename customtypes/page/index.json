@@ -2,30 +2,22 @@
   "id": "page",
   "label": "Page",
   "format": "page",
-  "repeatable": true,
+  "repeatable": false,
   "status": true,
   "json": {
     "Main": {
       "uid": {
+        "type": "UID",
         "config": {
-          "label": "UID"
-        },
-        "type": "UID"
+          "label": "uid",
+          "placeholder": ""
+        }
       },
       "title": {
         "type": "Text",
         "config": {
           "label": "Title",
           "placeholder": ""
-        }
-      },
-      "content": {
-        "type": "StructuredText",
-        "config": {
-          "label": "Content",
-          "placeholder": "",
-          "allowTargetBlank": true,
-          "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
         }
       },
       "slices": {
