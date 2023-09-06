@@ -1,7 +1,7 @@
 <script>
-  // export let data
+  export let data
 
-  // const { page } = data
+  const { page } = data
 </script>
 
 <img class="light" src="light.svg" alt="">
@@ -14,7 +14,7 @@
 
 	<article class="newspaper">
 		<header>
-			<h2>Hier komt wat over mezelf</h2>
+			<h2>{ page.title }</h2>
 		</header>
 
 
