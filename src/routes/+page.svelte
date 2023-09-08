@@ -8,13 +8,13 @@
 
 <div class="content">
 	<article class="portret">
-		<img src="me_myself_I.jpeg" alt="">
+		<img src="{ page.portret.url }" alt="">
 
 	</article>
 
 	<article class="newspaper">
 		<header>
-			<h2>{ page.title }</h2>
+			<h2>{ page.firstname }</h2>
 		</header>
 
 

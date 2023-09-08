@@ -4,61 +4,83 @@ import type * as prismic from "@prismicio/client";
 
 type Simplify<T> = { [KeyType in keyof T]: T[KeyType] };
 
-type PageDocumentDataSlicesSlice = never;
+type MainDocumentDataSlicesSlice = never;
 
 /**
- * Content for Page documents
+ * Content for Main documents
  */
-interface PageDocumentData {
+interface MainDocumentData {
   /**
-   * Title field in *Page*
+   * Portret field in *Main*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: main.portret
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  portret: prismic.ImageField<never>;
+
+  /**
+   * Firstname field in *Main*
    *
    * - **Field Type**: Text
    * - **Placeholder**: *None*
-   * - **API ID Path**: page.title
+   * - **API ID Path**: main.firstname
    * - **Tab**: Main
    * - **Documentation**: https://prismic.io/docs/field#key-text
    */
-  title: prismic.KeyTextField;
+  firstname: prismic.KeyTextField;
 
   /**
-   * Slice Zone field in *Page*
+   * Article field in *Main*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: main.article
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  article: prismic.RichTextField;
+
+  /**
+   * Slice Zone field in *Main*
    *
    * - **Field Type**: Slice Zone
    * - **Placeholder**: *None*
-   * - **API ID Path**: page.slices[]
+   * - **API ID Path**: main.slices[]
    * - **Tab**: Main
    * - **Documentation**: https://prismic.io/docs/field#slices
    */
-  slices: prismic.SliceZone<PageDocumentDataSlicesSlice>
+  slices: prismic.SliceZone<MainDocumentDataSlicesSlice>
   /**
-   * Meta Description field in *Page*
+   * Meta Description field in *Main*
    *
    * - **Field Type**: Text
    * - **Placeholder**: A brief summary of the page
-   * - **API ID Path**: page.meta_description
+   * - **API ID Path**: main.meta_description
    * - **Tab**: SEO & Metadata
    * - **Documentation**: https://prismic.io/docs/field#key-text
    */;
   meta_description: prismic.KeyTextField;
 
   /**
-   * Meta Image field in *Page*
+   * Meta Image field in *Main*
    *
    * - **Field Type**: Image
    * - **Placeholder**: *None*
-   * - **API ID Path**: page.meta_image
+   * - **API ID Path**: main.meta_image
    * - **Tab**: SEO & Metadata
    * - **Documentation**: https://prismic.io/docs/field#image
    */
   meta_image: prismic.ImageField<never>;
 
   /**
-   * Meta Title field in *Page*
+   * Meta Title field in *Main*
    *
    * - **Field Type**: Text
    * - **Placeholder**: A title of the page used for social media and search engines
-   * - **API ID Path**: page.meta_title
+   * - **API ID Path**: main.meta_title
    * - **Tab**: SEO & Metadata
    * - **Documentation**: https://prismic.io/docs/field#key-text
    */
@@ -66,18 +88,18 @@ interface PageDocumentData {
 }
 
 /**
- * Page document from Prismic
+ * Main document from Prismic
  *
- * - **API ID**: `page`
+ * - **API ID**: `main`
  * - **Repeatable**: `false`
  * - **Documentation**: https://prismic.io/docs/custom-types
  *
  * @typeParam Lang - Language API ID of the document.
  */
-export type PageDocument<Lang extends string = string> =
-  prismic.PrismicDocumentWithUID<Simplify<PageDocumentData>, "page", Lang>;
+export type MainDocument<Lang extends string = string> =
+  prismic.PrismicDocumentWithoutUID<Simplify<MainDocumentData>, "main", Lang>;
 
-export type AllDocumentTypes = PageDocument;
+export type AllDocumentTypes = MainDocument;
 
 declare module "@prismicio/client" {
   interface CreateClient {
@@ -89,9 +111,9 @@ declare module "@prismicio/client" {
 
   namespace Content {
     export type {
-      PageDocument,
-      PageDocumentData,
-      PageDocumentDataSlicesSlice,
+      MainDocument,
+      MainDocumentData,
+      MainDocumentDataSlicesSlice,
       AllDocumentTypes,
     };
   }

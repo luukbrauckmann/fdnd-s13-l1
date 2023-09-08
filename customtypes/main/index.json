@@ -1,23 +1,33 @@
 {
-  "id": "page",
-  "label": "Page",
+  "id": "main",
+  "label": "Main",
   "format": "page",
   "repeatable": false,
   "status": true,
   "json": {
     "Main": {
-      "uid": {
-        "type": "UID",
+      "portret": {
+        "type": "Image",
         "config": {
-          "label": "uid",
+          "label": "Portret",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "firstname": {
+        "type": "Text",
+        "config": {
+          "label": "Firstname",
           "placeholder": ""
         }
       },
-      "title": {
-        "type": "Text",
+      "article": {
+        "type": "StructuredText",
         "config": {
-          "label": "Title",
-          "placeholder": ""
+          "label": "Article",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
         }
       },
       "slices": {
