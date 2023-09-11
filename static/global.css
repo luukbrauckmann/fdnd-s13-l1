@@ -16,8 +16,9 @@ body {
 	margin: 0;
 }
 
-img.light {
+.light {
 	height: 25vh;
+	width: min-content;
 	position: fixed;
 	left: 50%;
 	top: 0%;
