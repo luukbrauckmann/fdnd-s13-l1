@@ -16,6 +16,7 @@
 	"type": "module",
 	"dependencies": {
 		"@prismicio/client": "^7.2.0",
+		"@sveltejs/adapter-vercel": "^3.0.3",
 		"node-fetch": "^3.3.2"
 	}
 }
