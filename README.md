@@ -37,7 +37,7 @@ pad_naar_het_project/fdnd-sprint-13-l1 >
 pad_naar_het_project/fdnd-sprint-13-l1 %
 ```
 
-3. Voordat je het project kunt starten moet je alle modules installeren.
+3. Voordat je de applicatie kunt starten moet je alle modules installeren.
 ```bash
 npm install
 ```
