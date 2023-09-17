@@ -8,6 +8,7 @@ Topics: (sub)task semester-naam, semesternummer, sprint-naam, sprint-nummer
 Redesign je visitekaartje op basis van een headless CMS en een framework.
 
 ## Context
+
 Deze leertaak hoort bij sprint 13: Your Tribe for Life. Dit is een autonome opdracht die je individueel uitvoert voor jouw eigen FDND Tribe.
 
 ## Doel van deze opdracht
@@ -26,6 +27,7 @@ De development lifecycle kent de volgende stappen:
 5. Testen - bijvoorbeeld: Unit testing (TDD), System test, User test, device lab test, A\B testing.
 
 ### Aanpak
+
 1. Kies een user story uit de backlog van het project waar je aan gaat werken. De projecten staan bij [FDND Agency](https://github.com/fdnd-agency).
 2. Fork de leertaak
 3. Hou je proces bij in de Wiki van de geforkte repository
