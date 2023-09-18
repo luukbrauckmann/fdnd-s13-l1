@@ -15,8 +15,6 @@
   </article>
 
   <article class="newspaper">
-    <header>
-      <h2>{@html prismic.asHTML(page.paper)}</h2>
-    </header>
+    {@html prismic.asHTML(page.paper)}
   </article>
 </div>
