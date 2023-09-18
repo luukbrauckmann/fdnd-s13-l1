@@ -1,5 +1,6 @@
 <script>
   import * as prismic from '@prismicio/client'
+  import { PrismicImage } from '@prismicio/svelte'
   import Light from '$lib/components/Light.svelte'
 
   export let data
@@ -10,11 +11,13 @@
 <Light />
 
 <div class="content">
-  <article class="portret">
-    <img src="{page.github.url}.png" alt="" />
-  </article>
-
   <article class="newspaper">
-    {@html prismic.asHTML(page.paper)}
+    <h1>{@html prismic.asHTML(page.title)}</h1>
+    <div class="introduction">
+      {@html prismic.asHTML(page.introduction)}
+
+      <PrismicImage field={page.image} />
+    </div>
+    <div>{@html prismic.asHTML(page.story)}</div>
   </article>
 </div>

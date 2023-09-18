@@ -10,9 +10,7 @@ body {
   background-position: center;
 	height: 100vh;
 	width: 100vw;
-
 	overflow: hidden;
-
 	margin: 0;
 }
 
@@ -33,30 +31,21 @@ body {
 }
 
 .content article {
+	font-size: .5rem;
 	background-color: #EEE8DA;
 	aspect-ratio: 1/1.41;
 	height: 35vh;
-	border: 15px solid black;
+	border: 8px solid black;
 	transition: all .2s;
+	padding-inline: 1em;
 }
 
-.content article img {
-	height: 100%;
-	width: 100%;
-	object-fit: cover;
+.content article.newspaper:hover,
+.content article.newspaper:focus {
+	transform: scale(2);
 }
 
-.content article.portret:hover {
-	transform: scale(2) translateX(5vw);
-	left: 50%;
-}
-
-.content article.newspaper {
-	padding: .5em;
-	font-size: .75rem;
-}
-
-.content article.newspaper:hover {
-	transform: scale(2) translateX(-5vw);
-	left: 50%;
+article > div.introduction {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
 }
