@@ -1,5 +1,5 @@
 <h1>
-  <img src="" style="height: 1em;">
+  <img src="https://github.com/luukbrauckmann/fdnd-s13-l1/assets/47314813/d1c65364-e0c6-4b2a-9f90-f018e58aa7a0" style="height: 1em;">
   <span> Mijn visitekaartje</span>
 </h1>
 
