@@ -8,8 +8,6 @@
   const { page } = data
 </script>
 
-<Light />
-
 <div class="content">
   <article class="newspaper">
     <h1>{@html prismic.asHTML(page.title)}</h1>
