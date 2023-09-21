@@ -14,22 +14,30 @@ body {
 	margin: 0;
 }
 
-.content article {
-	font-size: .5rem;
+.newspaper {
 	background-color: #EEE8DA;
 	aspect-ratio: 1/1.41;
-	height: 35vh;
+	height: 70vh;
 	border: 8px solid black;
 	transition: all .2s;
 	padding-inline: 1em;
+
+	position: absolute;
+	inset: 50% 50%;
+	transform: translate(-50%, -70%) scale(.5);
 }
 
-.content article.newspaper:hover,
-.content article.newspaper:focus {
-	transform: scale(2);
+.newspaper:hover {
+	transform: translate(-50%, -50%) scale(1);
+	transform-origin: center;
 }
 
-article > div.introduction {
+.newspaper > div.introduction {
 	display: grid;
 	grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.newspaper img {
+	width: 100%;
+	height: auto;
 }
