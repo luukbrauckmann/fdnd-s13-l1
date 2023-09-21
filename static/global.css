@@ -15,6 +15,7 @@ body {
 }
 
 .newspaper {
+	font-size: 1.75vh;
 	background-color: #EEE8DA;
 	aspect-ratio: 1/1.41;
 	height: 70vh;
