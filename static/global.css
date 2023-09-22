@@ -15,22 +15,22 @@ body {
 }
 
 .newspaper {
-	font-size: 1.75vh;
+	font-size: clamp(.25rem, 275vw, 1.125rem);
 	background-color: #EEE8DA;
 	aspect-ratio: 1/1.41;
-	height: 70vh;
+	width: clamp(15rem, 40%, 30rem);
 	border: 8px solid black;
 	transition: all .2s;
 	padding-inline: 1em;
 
 	position: absolute;
 	inset: 50% 50%;
-	transform: translate(-50%, -70%) scale(.5);
+	transform: translate(-50%, -60%) scale(.5);
+	transform-origin: center;
 }
 
 .newspaper:hover {
 	transform: translate(-50%, -50%) scale(1);
-	transform-origin: center;
 }
 
 .newspaper > div.introduction {

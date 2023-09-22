@@ -1,8 +1,7 @@
 <script>
   import * as prismic from '@prismicio/client'
-  import { PrismicImage } from '@prismicio/svelte'
-  export let data
 
+  export let data
   const { page } = data
 </script>
 
