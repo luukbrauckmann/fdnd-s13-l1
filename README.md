@@ -30,10 +30,6 @@ Wil je deze applicatie lokaal starten? Volg dan de volgende stappen. Let op! Nod
 
 1. Open je terminal. Zorg dat je in het pad zit van het project.
 ```bash
-# Windows
-pad_naar_het_project/fdnd-sprint-13-l2 >
-
-# MacOS
 pad_naar_het_project/fdnd-sprint-13-l2 %
 ```
 
