@@ -5,9 +5,9 @@
 body {
 	background: url(./background.svg);
 	background-repeat: repeat no-repeat;
-  background-size: auto 100%;
-  background-attachment: fixed;
-  background-position: bottom;
+	background-size: auto 100%;
+	background-attachment: fixed;
+	background-position: bottom;
 	height: 100%;
 	width: 100%;
 	overflow: hidden;
