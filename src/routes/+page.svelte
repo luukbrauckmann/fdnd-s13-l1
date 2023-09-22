@@ -3,6 +3,7 @@
 
   export let data
   const { page } = data
+  
 </script>
 
 <article class="newspaper">
