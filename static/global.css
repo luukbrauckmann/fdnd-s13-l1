@@ -18,7 +18,7 @@ body {
 	font-size: clamp(.25rem, 275vw, 1.125rem);
 	background-color: #EEE8DA;
 	aspect-ratio: 1/1.41;
-	width: clamp(15rem, 40%, 30rem);
+	width: clamp(min(20rem, 15rem), 30rem, max(30rem, 55rem));
 	border: 8px solid black;
 	transition: all .2s;
 	padding-inline: 1em;
