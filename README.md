@@ -49,7 +49,7 @@ npm run dev --open
 
 <h2 id="bronnen">🌍 Bronnen</h2>
 
-- [Instructies](docs/INSTRUCTIONS.md)
+- [Instructies](./docs/INSTRUCTIONS.md)
 - [Sveltekit](https://kit.svelte.dev/)
 - [Prismic](https://prismic.io/)
 - [Vercel](https://vercel.com/)
